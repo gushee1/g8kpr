@@ -1,0 +1,6 @@
+@g8kpr_HostAddress = http://localhost:5190
+
+GET {{g8kpr_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,7 @@
+bin/
+music/
+obj/
+Properties/
+appsettings.Development.json
+appsettings.json
+auth.json

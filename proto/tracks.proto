@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "g8kpr.proto";
+
+package tracks;
+
+service TrackManager {
+    rpc GetTrackInfo (TrackInfoRequest) returns (TrackInfo);
+}
+
+message TrackInfoRequest {
+    string trackName = 1;
+}
+
+message TrackInfo {
+    int32 duration = 1; // track duration in seconds
+    int32 bpm = 2;
+    repeated bool dance = 3;
+}
